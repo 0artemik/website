@@ -108,23 +108,27 @@ body {
 /* Hero */
 .hero {
     position: relative;
-    min-height: 85vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(160deg, #0f0a14 0%, #1a0f28 35%, #1e1225 60%, #0f0a14 100%);
+    background-color: #05020a;
     padding: 6rem 0 4rem;
     text-align: center;
     overflow: hidden;
 }
 
+.hero--photo {
+    background-image: url("../img/hero-main.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(ellipse 80% 50% at 50% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(236, 72, 153, 0.12) 0%, transparent 45%),
-        radial-gradient(ellipse 50% 30% at 20% 70%, rgba(192, 132, 252, 0.08) 0%, transparent 40%);
+    background: linear-gradient(140deg, rgba(5, 2, 10, 0.65), rgba(5, 2, 10, 0.2));
     pointer-events: none;
 }
 
