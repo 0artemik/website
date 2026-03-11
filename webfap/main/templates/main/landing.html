@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage Pskov — Премиальный массаж и SPA</title>
+    <meta name="description" content="Сеть премиальных салонов массажа и SPA во Пскове. Расслабление, уют и забота о каждом гостей.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="logo" aria-label="На главную">Massage Pskov</a>
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О нас</a></li>
+                    <li><a href="#gallery" class="nav__link">Галерея</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 id="hero-heading" class="hero__title">Сеть премиальных салонов<br> массажа и SPA</h1>
+                <p class="hero__tagline">Атмосфера расслабления, уюта и красоты. Внимание и забота для каждого гостя.</p>
+                <a href="#contacts" class="hero__cta button">Записаться</a>
+            </div>
+        </section>
+
+        <section id="about" class="about section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section__title">О нас</h2>
+                <p class="about__text">Премиальная компания массажа и SPA-услуг в самом сердце города. Атмосфера расслабления, уюта и красоты. Профессионализм и доброжелательность мастеров. Наша цель — подарить нашим гостям счастье, здоровье и гармонию.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section" aria-labelledby="gallery-heading">
+            <div class="container">
+                <h2 id="gallery-heading" class="section__title">Галерея</h2>
+                <div class="gallery__stack">
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80" alt="Интерьер салона — уютная атмосфера" width="800" height="533" loading="lazy">
+                        <figcaption class="gallery__caption">Атмосфера уюта и спокойствия</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80" alt="SPA-зона с массажным столом" width="800" height="533" loading="lazy">
+                        <figcaption class="gallery__caption">Премиальная SPA-зона</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://avatars.mds.yandex.net/get-altay/7383884/2a000001836a02d71fece45041512a773533/XXL_height" alt="Расслабляющий массаж" width="800" height="533" loading="lazy">
+                        <figcaption class="gallery__caption">Профессиональный массаж</figcaption>
+                    </figure> 
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section__title">Каталог услуг</h2>
+                <ul class="services__list">
+                    <li class="service-card">
+                        <h3 class="service-card__name">Классический массаж</h3>
+                        <p class="service-card__desc">Расслабление мышц, снятие напряжения. 60 мин.</p>
+                        <span class="service-card__price">от 3 500 ₽</span>
+                    </li>
+                    <li class="service-card">
+                        <h3 class="service-card__name">Спа-массаж</h3>
+                        <p class="service-card__desc">Ароматерапия, масла и полное погружение в релакс. 60 мин.</p>
+                        <span class="service-card__price">от 5 000 ₽</span>
+                    </li>
+                    <li class="service-card">
+                        <h3 class="service-card__name">Тайский массаж</h3>
+                        <p class="service-card__desc">Растяжки и работа с энергией тела. 90 мин.</p>
+                        <span class="service-card__price">от 6 000 ₽</span>
+                    </li>
+                    <li class="service-card">
+                        <h3 class="service-card__name">Расслабляющий массаж</h3>
+                        <p class="service-card__desc">Мягкие техники для снятия стресса. 60 мин.</p>
+                        <span class="service-card__price">от 4 000 ₽</span>
+                    </li>
+                    <li class="service-card">
+                        <h3 class="service-card__name">VIP-программа</h3>
+                        <p class="service-card__desc">Расширенный ритуал с горячими полотенцами и авторской техникой. 90 мин.</p>
+                        <span class="service-card__price">от 12 000 ₽</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts section" aria-labelledby="contacts-heading">
+            <div class="container">
+                <h2 id="contacts-heading" class="section__title">Контакты</h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <p class="contacts__address">г. Псков, Садовый пер. 26<br></p>
+                        <p class="contacts__hours">Ежедневно с 00:00 до 00:00</p>
+                        <p class="contacts__phone"><a href="tel:+79113977167">+7 (911) 397-71-67</a></p>
+                        <ul class="social" aria-label="Социальные сети">
+                            <li><a href="https://vk.com/salapi" class="social__link social__link_vk" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">ВКонтакте</a></li>
+                            <li><a href="https://t.me/salapi28" class="social__link social__link_tg" target="_blank" rel="noopener noreferrer" aria-label="Telegram">Telegram</a></li>
+                        </ul>
+                    </div> 
+                    <div class="contacts__map">
+                        <!-- Чтобы вставить свой адрес: откройте Google Maps → выберите место → Поделиться → Встроить карту → скопируйте src iframe сюда -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.47968705109184!2d28.32312595266846!3d57.83470977538863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c01ebbb7d0eaaf%3A0x391c5041f7d6f503!2z0KHQsNC00L7QstGL0Lkg0L_QtdGALiwgMjYsINCf0YHQutC-0LIsINCf0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxODAwMDY!5e0!3m2!1sru!2sru!4v1772914631368!5m2!1sru!2sru"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Карта: салон Relax For You, Псков">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">© 2026 Massage Pskov. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
